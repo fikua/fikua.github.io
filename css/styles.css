@@ -1,6 +1,13 @@
 /* Set the font to Montserrat */
 body {
     font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
 }
 
 /* Responsive styles */
