@@ -1,0 +1,12 @@
+/* Set the font to Montserrat */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+    /* Adjust the styles for smaller screens */
+    header {
+        text-align: center;
+    }
+}
