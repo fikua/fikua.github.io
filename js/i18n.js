@@ -1,3 +1,6 @@
+// Sets default language
+window.onload = function() { loadTranslations('ca') }
+
 // Function to load translations based on the selected language
 function loadTranslations(lang) {
     // Fetch the i18n file
@@ -22,29 +25,6 @@ function loadTranslations(lang) {
         });
 }
 
-// Check if a language is already selected in localStorage
-const storedLanguage = localStorage.getItem('language');
-
-if (storedLanguage) {
-    // Load the translations for the stored language
-    loadTranslations(storedLanguage);
-} else {
-    // Fetch the i18n file to get the available languages
-    fetch('i18n.json')
-        .then(response => response.json())
-        .then(translations => {
-            // Get the first available language as the default language
-            const defaultLanguage = Object.keys(translations)[0];
-            // Save the default language to localStorage
-            localStorage.setItem('language', defaultLanguage);
-            // Load the translations for the default language
-            loadTranslations(defaultLanguage);
-        })
-        .catch(error => {
-            console.error('Failed to load translations:', error);
-        });
-}
-
 // Event listener for flag icon click
 const flagIcons = document.querySelectorAll('.flag-icon');
 flagIcons.forEach(icon => {
@@ -54,16 +34,7 @@ flagIcons.forEach(icon => {
         localStorage.setItem('language', selectedLanguage);
         // Load the translations for the selected language
         loadTranslations(selectedLanguage);
-        handleLanguageChange(selectedLanguage);
     });
 });
-
-// Function to handle language change
-function handleLanguageChange(language) {
-    // Save the selected language to localStorage for future visits
-    localStorage.setItem('language', language);
-    // Load the translations for the selected language
-    loadTranslations(language);
-}
 
 
