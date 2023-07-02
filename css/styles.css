@@ -17,3 +17,15 @@ main {
         text-align: center;
     }
 }
+
+.responsive-flag {
+    width: 100%;
+    height: auto;
+    max-width: 30px; /* Set the maximum width as needed */
+}
+
+.responsive-brand {
+    width: 100%;
+    height: auto;
+    max-width: 70px; /* Set the maximum width as needed */
+}
