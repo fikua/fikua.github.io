@@ -1,29 +1,11 @@
 {
-  "ca": {
-    "navbar.home": "Inici",
-    "navbar.about": "Sobre nosaltres",
-    "navbar.projects": "Projectes",
-    "navbar.collaborate": "Col·labora",
-    "about.heading": "Sobre fikua",
-    "about.description": "Aquesta és la pàgina web del projecte 'fikua'. És el projecte personal d'Oriol Canadés, que va començar després de tres anys de programació i aprenentatge sobre desenvolupament web. 'fikua' té com a objectiu crear i desenvolupar projectes que tinguin un impacte positiu en la societat actual, amb un enfocament en els problemes socials i els drets dels animals.",
-    "footer.rights": "Tots els drets reservats."
-  },
-  "es": {
-    "navbar.home": "Inicio",
-    "navbar.about": "Acerca de",
-    "navbar.projects": "Proyectos",
-    "navbar.collaborate": "Colabora",
-    "about.heading": "Acerca de fikua",
-    "about.description": "Esta es la página web del proyecto 'fikua'. Es el proyecto personal de Oriol Canadés, que comenzó después de tres años de programación y aprendizaje sobre desarrollo web. 'fikua' tiene como objetivo crear y desarrollar proyectos que tengan un impacto positivo en la sociedad actual, con un enfoque en los problemas sociales y los derechos de los animales.",
-    "footer.rights": "Todos los derechos reservados."
-  },
   "en": {
     "navbar.home": "Home",
     "navbar.about": "About",
     "navbar.projects": "Projects",
     "navbar.collaborate": "Collaborate",
     "about.heading": "About fikua",
-    "about.description": "This is the web page of the project 'fikua'. It is the personal project of Oriol Canadés, which he started after three years of programming and learning about web development. 'fikua' aims to create and develop projects that have a positive impact on today's society, with a focus on social problems and animal rights.",
+    "about.description": "Fikua is a non-profit organization dedicated to facilitating and providing technology guidance related to self-sovereign identity and digital identity for any organization aiming to create and implement a digital identity system. The name \"Fikua\" is derived from the transformation of the Swahili word \"fichua,\" which means to expose, disclose, uncover, unveil, or reveal.\n                    ",
     "footer.rights": "All rights reserved."
   }
 }
