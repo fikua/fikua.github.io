@@ -9,6 +9,12 @@
     <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        /* Justify all paragraph text */
+        p {
+            text-align: justify;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +30,7 @@
                     <img src="img/fikua-icon.png" alt="fikua-icon" class="logo" style="width: 85px; padding-right: 20px">
                 </a>
                 <!-- Title of the page -->
-                <h2>fikua</h2>
+                <h2>fikua.org</h2>
             </div>
         </div>
     </header>
@@ -32,33 +38,64 @@
     <!-- Main Content Section -->
     <section class="py-5">
         <div class="container">
-            <h1 class="mb-4">Learn More About Fikua</h1>
-            <p>Fikua is a non-profit organization dedicated to facilitating and providing technology guidance related to
-                self-sovereign identity and digital identity for any organization aiming to create and implement a
-                digital identity system.</p>
-            <p>Our mission is to empower individuals and communities by offering resources, tools, and education to
-                foster innovation and sustainable development.</p>
-            <p>We collaborate with diverse partners to promote ethical technology use and create positive social impacts
-                through our projects.</p>
+
+            <h1 class="mb-4">Learn more</h1>
+
+            <h2 class="mt-5" style="padding-bottom: 20px">Introduction</h2>
+
+            <p> Fikua is a non-profit project dedicated to facilitating and providing technology guidance related to self-sovereign identity and digital identity for any organization aiming to create and implement a digital identity system.</p>
+            <p> We want to be a non-profit organization in the future, but for now, we are focusing on the project itself and not the administrative nature.</p>
+
+            <p>Firstly, we introduce you to understanding the key differences between Self-Sovereign Identity (SSI) and Digital Identity. Let's explore these concepts!</p>
+
+            <p>The <strong>Digital Identity</strong> refers to the electronic representation of an individual, organization, or device's identity in the digital world. It encompasses the various attributes and data points that establish and verify who or what someone is online.</p>
+            <p>Digital identity information may include a person's name, email address, username, biometric data, government-issued IDs, and more. It plays a crucial role in online interactions, enabling individuals to access services, make transactions, and establish trust on the internet.</p>
+
+            <p>On the other hand, the <strong>Self-Sovereign Identity</strong>, often abbreviated as SSI, is a decentralized and user-centric approach to identity management in the digital realm. In an SSI ecosystem, individuals have complete ownership and control over their identity information.</p>
+
+            <h3 class="mt-4" style="padding-bottom: 20px">Key Principles of SSI</h3>
+            <ul>
+                <li><strong>User Control:</strong> Users hold and manage their digital credentials, which are cryptographic proofs of identity, in a digital wallet. This ensures that individuals have control over who accesses their identity information and when.</li>
+                <li><strong>Decentralization:</strong> SSI systems rely on decentralized and distributed ledger technologies (DLT) like blockchain to eliminate the need for centralized authorities to verify identity. This enhances security and privacy while reducing reliance on intermediaries.</li>
+                <li><strong>Privacy:</strong> SSI prioritizes user privacy by allowing individuals to share only the specific information necessary for a transaction or verification, minimizing the exposure of personal data.</li>
+                <li><strong>Interoperability:</strong> SSI ecosystems aim to be interoperable across different platforms and organizations, allowing individuals to use their digital credentials universally.</li>
+                <li><strong>Security:</strong> The use of cryptographic methods ensures the security and integrity of digital credentials and identity information.</li>
+            </ul>
+
+            <h3 class="mt-4">Supporting Technologies and Standards:</h3>
+            <p>Digital Identity and SSI ecosystems rely on a set of technologies and standards, including blockchain, decentralized identifiers (DIDs), verifiable credentials (VCs) and presentations (VPs), and zero-knowledge proofs (ZKPs).</p>
+
+            <h2 class="mt-5">Verifiable Credentials (VCs) and Presentations (VPs)</h2>
+            <p>Verifiable Credentials and Verifiable Presentations are fundamental components in Digital Identity and Self-Sovereign Identity (SSI) ecosystems, and they play critical roles in enabling secure and privacy-focused identity interactions.</p>
+
+            <h3 class="mt-4">Verifiable Credentials</h3>
+            <p>A Verifiable Credential (VC) is a digital representation of identity information issued by trusted entities, such as government agencies, financial institutions, or educational institutions. These credentials can include driver's licenses, passports, diplomas, and more.</p>
+            <p>In SSI ecosystems, verifiable credentials are issued, held, and controlled entirely by the individual (the holder) rather than centralized authorities. Users collect and manage these credentials in a digital wallet, which may include personal information, qualifications, and other attributes. Verifiable credentials in SSI are cryptographically signed and can be shared selectively with verifiers.</p>
+
+            <h3 class="mt-4">Verifiable Presentations</h3>
+            <p>A Verifiable Presentation (VP) is how individuals or entities present their verifiable credentials to prove their identity or qualifications when interacting with services or organizations online. These presentations are typically sent to verifiers (service providers or relying parties) as part of authentication or identity verification processes.</p>
+            <p>In SSI ecosystems, the critical distinction is that users have full control over which credentials they share and with whom, enhancing privacy and control over their personal information. Verifiable presentations are also cryptographically secured, ensuring the integrity of the information presented.</p>
+
+            <h2 class="mt-5">Decentralized Identifiers (DIDs)</h2>
+            <p>Decentralized Identifiers (DIDs) are another core component of the Self-Sovereign Identity (SSI) framework and a fundamental building block for creating decentralized and verifiable digital identities.</p>
+
+            <h3 class="mt-4">DIDs Characteristics:</h3>
+            <ul>
+                <li><strong>Uniqueness:</strong> DIDs are designed to be globally unique, ensuring that no two DIDs are the same. They are constructed to minimize the risk of collisions, making it highly improbable that two entities will ever have the same DID.</li>
+                <li><strong>Decentralization:</strong> DIDs are not tied to a centralized registry, authority, or intermediary. Instead, they are created and managed on decentralized and distributed ledger technologies (DLT). This decentralization eliminates the need for a central authority to manage or validate DIDs.</li>
+                <li><strong>Persistence:</strong> DIDs are intended to be persistent over time. Once created, they can be used as long as the entity desires, regardless of changes in technology or service providers.</li>
+                <li><strong>Control:</strong> One of the key features of DIDs is that the entity (or the DID subject) has complete control over their DID. This control extends to the management of associated cryptographic keys and the ability to update, revoke, or deactivate the DID as needed.</li>
+                <li><strong>Cryptographic Security:</strong> DIDs are associated with a set of cryptographic keys, typically stored in a DID Document. These keys are used for various purposes, including authentication, encryption, and digital signatures. The cryptographic nature of DIDs enhances security and privacy.</li>
+            </ul>
+
+            <p>The uniqueness, decentralization, persistence, control, and cryptographic security of DIDs make them a foundational element in the SSI framework, enabling users to have more control over their digital identities while reducing reliance on centralized authorities.</p>
+
         </div>
     </section>
-
 </main>
-
-<!-- Footer -->
-<footer class="py-4 bg-light text-center">
-    <div class="container">
-        <p>
-            <a>&copy; 2024 Fikua. </a><a>All rights reserved.</a>
-        </p>
-    </div>
-</footer>
-
-<!-- scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        integrity="sha384-Q3shmkHM86pjup8/e+4ZLt/7iwl9A7/6ixwLZIThTd13c5DY6Rm8z8lZ5AGK4z6s"
         crossorigin="anonymous"></script>
-
 </body>
-</html>
 
+</html>
